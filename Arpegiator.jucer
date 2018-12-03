@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="hzxiLX" name="Arpegiator" projectType="audioplug" jucerVersion="5.3.2"
+<JUCERPROJECT id="hzxiLX" name="Sequencer" projectType="audioplug" jucerVersion="5.3.1"
               pluginCharacteristicsValue="pluginIsMidiEffectPlugin,pluginProducesMidiOut,pluginWantsMidiIn">
-  <MAINGROUP id="dbcDrJ" name="Arpegiator">
+  <MAINGROUP id="dbcDrJ" name="Sequencer">
     <GROUP id="{D9B2C6E8-F547-7FB5-EC4C-C6A3888A7C44}" name="Source">
       <FILE id="ILIuXW" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>

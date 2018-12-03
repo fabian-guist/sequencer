@@ -1,13 +1,3 @@
-/*
-  ==============================================================================
-
-    This file was auto-generated!
-
-    It contains the basic framework code for a JUCE plugin processor.
-
-  ==============================================================================
-*/
-
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
 
@@ -197,8 +187,7 @@ void ArpegiatorAudioProcessor::processBlock (AudioBuffer<float>& buffer, MidiBuf
         
     }
     
-    //Nachteil von juice?? Bei jedem processBlock parameter neu abfragen
-    int currentNotes[8];
+   int currentNotes[8];
     for(int i = 0; sizeof(currentNotes)/sizeof(*currentNotes) > i; i++)
     {
         String indexString = std::to_string(i);
@@ -218,13 +207,8 @@ void ArpegiatorAudioProcessor::processBlock (AudioBuffer<float>& buffer, MidiBuf
     }
     
         
-    // the audio buffer in a midi effect will have zero channels!
     jassert (buffer.getNumChannels() == 0);
-    
-    // however we use the buffer to get timing information
     auto numSamples = buffer.getNumSamples();
-    
-    // get note duration
     auto noteDuration = static_cast<int> (std::ceil (rate * 0.25f * (0.1f + (1.0f - (speed)))));
     
     if ((time + numSamples) >= noteDuration)

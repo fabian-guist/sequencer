@@ -8,11 +8,11 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.Arpegiator</string>
+    <string>com.yourcompany.Sequencer</string>
     <key>CFBundleName</key>
-    <string>Arpegiator</string>
+    <string>Sequencer</string>
     <key>CFBundleDisplayName</key>
-    <string>Arpegiator</string>
+    <string>Sequencer</string>
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleSignature</key>
@@ -29,11 +29,11 @@
     <array>
       <dict>
         <key>name</key>
-        <string>yourcompany: Arpegiator</string>
+        <string>yourcompany: Sequencer</string>
         <key>description</key>
-        <string>Arpegiator</string>
+        <string>Sequencer</string>
         <key>factoryFunction</key>
-        <string>ArpegiatorAUFactory</string>
+        <string>SequencerAUFactory</string>
         <key>manufacturer</key>
         <string>Manu</string>
         <key>type</key>
